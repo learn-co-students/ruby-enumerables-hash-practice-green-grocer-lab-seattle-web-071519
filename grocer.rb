@@ -3,7 +3,8 @@ def consolidate_cart(cart)
 
   cart.each do |items_array| 
     items_array.each do |item, attribute_hash| 
-      #will check if the statement on the left is true. If it is, it will continue to the next line of code. If the statement #is false or nil, it will set the statement on the left equal to the statement on the right.
+      #will check if the statement on the left is true. If it is, it will continue to the next line of code. 
+      # If the statement #is false or nil, it will set the statement on the left equal to the statement on the right.
         new_cart[item] ||= attribute_hash
         new_cart[item][:count] ? new_cart[item][:count] += 1 : new_cart[item][:count] = 1 
     end
