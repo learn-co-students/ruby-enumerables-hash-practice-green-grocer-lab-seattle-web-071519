@@ -1,5 +1,6 @@
 def consolidate_cart(cart)
-  # code here
+  attributes.keys = :count
+  :count = 1 
 end
 
 def apply_coupons(cart, coupons)
